@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+
+}
+section {
+  scroll-margin-top: 80px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #15191E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 10px;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    padding: 0 80px;
+}
+
+.navbar a {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornsilk;
+    text-decoration: none;
+    padding: 10px 20px;       /* adds space inside */
+    border-radius: 12px;      /* rounded corners */
+}
+.navbar a:hover {
+    color: #B8B3B1 ;
+    transform: scale(1.1);
+}
+.firstblock{
+    width:100%;
+    height:800px;
+    padding-top: 120px;
+    /* Add a dark semi-transparent layer over the image */
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('leaves.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+#intro{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    color:cornsilk;
+    text-align: right;
+    margin-right: 50px;
+}
+#pfp{
+    width: 400px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: beige;
+    border-radius: 50%;
+    border-top: 20px;
+    background-image: url('pfp3.jpg');
+    background-position: 0px -80px;
+    background-size:cover;
+}
+.about {
+    background: linear-gradient(to right, #6FB1A0 0%, #C8E0D1 100%);
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 50px;
+}
+
+/* Illustration side */
+.about-image {
+    width: 400px;
+    height: 400px;
+    background: url('coding-coffee.png') center/cover no-repeat;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* subtle hover pop effect */
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+/* Text box side */
+.about-text {
+    background-color: #B8B3B1;
+    color: #283D3B;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: left;
+}
+.about-text:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #283D3B;
+}
+
+.about-text p {
+    font-size: 20px;
+}
+
+/* this is kind of a container for cards */
+.skills{
+    width:100%;
+    height: 500px;
+    background-color: #355E57;
+    /* border-radius: 60px 60px 0 0; */
+    margin-top: 0px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+.skills_heading{
+    background-color:#355E57;
+    font-size: 48px;
+    padding-top: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.card {
+    background-color: #B8B3B1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 50px;
+    width: 250px;
+    height: 200px;
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 100px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.card i{
+    font-size: 100px;
+    margin-bottom: 25px;
+}
+/* .projects{
+    width: 100%;
+    height: 600px;
+    background-color: #795663;
+} */
+#projects {
+  background-color: #F5F7F6;
+  padding: 60px 0;
+}
+
+.projects-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-heading {
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: rgb(40, 61, 59);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(40, 61, 59, 0.65);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  margin: 20px 0 10px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #537E72;
+}
+
+.project-card p {
+  padding: 0 20px 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555555;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  background-color: #6FB1A0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #558B6E;
+}
+
+.contact{
+    width: 100%;
+    height: 200px;
+    background-color: #6FB1A0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact a {
+    text-decoration: none;
+}
+.contact h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:cornsilk;
+}
+.mediaicons{
+    font-size:60px;
+}
+footer{
+    background-color: #15191E;
+    width: 100%;
+    height: 70px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
