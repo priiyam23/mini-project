@@ -81,8 +81,8 @@ section {
     border-radius: 50%;
     border-top: 20px;
     background-image: url('pfp3.jpg');
-    background-position: 0px -80px;
-    background-size:cover;
+    background-position: -220px -500px;
+    background-size:200%;
 }
 .about {
     background: linear-gradient(to right, #6FB1A0 0%, #C8E0D1 100%);
@@ -362,6 +362,7 @@ footer{
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
